@@ -1,17 +1,18 @@
  class Character {
-    constructor(name, type, health, level, attack, defence) {
-        this.name = name;
+    constructor(name, type) {
         if (this.name.length > 10 && this.name.length < 2) {
             throw new Error('Не правильно передано имя!')
         }
-        this.type = type;
         if (typeof this.type !== "string") {
             throw new Error('Передали не строку')
         }
-        this.health = health;
-        this.level = level;
-        this.attack = attack;
-        this.defence = defence;
+
+        this.name = name;
+        this.type = type;
+        this.health = 100;
+        this.level = 1;
+        this.attack = undefined;
+        this.defence = undefined;
     }
 
     levelUp() {

@@ -1,13 +1,13 @@
 import {Character} from "./Character.js";
 
 class Daemon extends Character {
-    constructor(name, type, attack, defence) {
-        super(name, type, attack, defence)
+    constructor(name, type) {
+        super(name, type)
         this.type = type
-        this.attack = attack;
-        this.defence = defence;
+        this.attack = 10;
+        this.defence = 40;
     }
 }
 
-const demon = new Daemon('Daemon', 'Daemon',  10, 40);
+const demon = new Daemon('Daemon', 'Daemon');
 

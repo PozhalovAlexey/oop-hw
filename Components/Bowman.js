@@ -1,13 +1,13 @@
 import {Character} from "./Character.js";
 
 class Bowman extends Character {
-    constructor(name, type, attack, defence) {
-        super(name, type, attack, defence)
+    constructor(name, type) {
+        super(name, type)
         this.type = type
-        this.attack = attack;
-        this.defence = defence;
+        this.attack = 25;
+        this.defence = 25;
     }
 }
 
-const bowman = new Bowman('Bowman', 'Bowman',  25, 25);
+const bowman = new Bowman('Bowman', 'Bowman');
 
